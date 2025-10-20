@@ -65,13 +65,13 @@ const Hero = () => {
           </div>
 
           {/* Hero Image/Illustration */}
-          <div className="relative lg:h-[600px] animate-fade-in flex items-center justify-center">
+          <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] animate-fade-in flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl"></div>
-            <div className="relative w-full h-full flex items-center justify-center p-8">
+            <div className="relative w-full h-full flex items-center justify-center p-4 sm:p-6 lg:p-8">
               <img 
                 src={heroDevices} 
                 alt="Dispositivos mostrando soluções digitais da Arentech" 
-                className="w-full h-auto max-h-[550px] object-contain drop-shadow-2xl animate-scale-in"
+                className="w-full h-full max-w-full max-h-full object-contain drop-shadow-2xl animate-scale-in"
               />
             </div>
           </div>
