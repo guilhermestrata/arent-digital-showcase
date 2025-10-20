@@ -44,7 +44,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email",
       content: "arentech.contato@gmail.com",
-      link: "mailto:contato@gmail.com",
+      link: "mailto:arentech.contato@gmail.com",
     },
     {
       icon: Phone,
