@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Briefcase, UserPlus } from "lucide-react";
+import heroDevices from "@/assets/hero-devices.png";
 
 const Hero = () => {
   return (
@@ -64,22 +65,14 @@ const Hero = () => {
           </div>
 
           {/* Hero Image/Illustration */}
-          <div className="relative lg:h-[600px] animate-fade-in">
+          <div className="relative lg:h-[600px] animate-fade-in flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-card rounded-3xl shadow-strong p-8 border border-border overflow-hidden">
-              <div className="grid grid-cols-2 gap-4">
-                {[...Array(4)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 animate-scale-in"
-                    style={{ animationDelay: `${i * 0.1}s` }}
-                  >
-                    <div className="h-full w-full flex items-center justify-center">
-                      <div className="w-16 h-16 rounded-full gradient-primary opacity-50"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="relative w-full h-full flex items-center justify-center p-8">
+              <img 
+                src={heroDevices} 
+                alt="Dispositivos mostrando soluções digitais da Arentech" 
+                className="w-full h-auto max-h-[550px] object-contain drop-shadow-2xl animate-scale-in"
+              />
             </div>
           </div>
         </div>
