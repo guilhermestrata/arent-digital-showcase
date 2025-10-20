@@ -43,14 +43,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "contato@arentech.com",
-      link: "mailto:contato@arentech.com",
+      content: "arentech.contato@gmail.com",
+      link: "mailto:contato@gmail.com",
     },
     {
       icon: Phone,
       title: "Telefone",
-      content: "(11) 99999-9999",
-      link: "tel:+5511999999999",
+      content: "(11) 96639-6828",
+      link: "tel:+5511966396828",
     },
     {
       icon: MapPin,

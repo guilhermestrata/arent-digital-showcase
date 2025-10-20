@@ -40,9 +40,9 @@ const Hero = () => {
                 className="text-lg h-14 px-8 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
                 asChild
               >
-                <a href="#contact">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczfW8f5pJ8qb8Qrz1gGILEDYBk6xJ6UN1YHzYNJDVbfqz7Ww/viewform?usp=sharing&ouid=112847980126082827165">
                   <UserPlus className="mr-2 h-5 w-5" />
-                  Quero me candidatar
+                  Trabalhe conosco
                 </a>
               </Button>
             </div>
@@ -50,11 +50,11 @@ const Hero = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="space-y-1">
-                <div className="text-3xl sm:text-4xl font-bold text-primary">100+</div>
+                <div className="text-3xl sm:text-4xl font-bold text-primary">40+</div>
                 <div className="text-sm text-muted-foreground">Projetos</div>
               </div>
               <div className="space-y-1">
-                <div className="text-3xl sm:text-4xl font-bold text-primary">98%</div>
+                <div className="text-3xl sm:text-4xl font-bold text-primary">100%</div>
                 <div className="text-sm text-muted-foreground">Satisfação</div>
               </div>
               <div className="space-y-1">
@@ -66,7 +66,7 @@ const Hero = () => {
 
           {/* Hero Image/Illustration */}
           <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] animate-fade-in flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/20 rounded-3xl blur-3xl"></div>
             <div className="relative w-full h-full flex items-center justify-center p-4 sm:p-6 lg:p-8">
               <img 
                 src={heroDevices} 
