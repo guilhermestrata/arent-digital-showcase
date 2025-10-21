@@ -31,10 +31,10 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <img src={logo} alt="Arentech Logo" className="h-16 w-auto" />
+            <img src={logo} alt="Arentech Logo" className="h-24 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
