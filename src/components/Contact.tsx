@@ -7,6 +7,8 @@ import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
+import axios from "axios";
+import { error } from "console";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -24,6 +26,36 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  const sendEmail = async () => {
+    try {
+      const data = {
+        service_id: "service_75wgnqj",
+        template_id: "template_ak8sovh",
+        user_id: "LLKYnCdhhNEwuPKa7",
+        template_params: {
+          user_name: formData.name,
+          email: formData.email
+        }
+      };
+
+      console.log("Enviando dados para EmailJS:", data);
+
+      const response = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json"
+          }
+        }
+      );
+
+      console.log("Sucesso:", response.data);
+    } catch (error) {
+      console.error("Erro:", error);
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -45,6 +77,8 @@ const Contact = () => {
         title: "Mensagem enviada!",
         description: "Entraremos em contato em breve.",
       });
+
+      await sendEmail();
 
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
